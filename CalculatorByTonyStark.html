@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title></title>
+    </head>
+    <body>
+      <div class="c1">CALCULATOR V-2.0</div>
+      <form name="ex">  <div value="" name="ans"><input type="text" id="i1" value="" name="fi"></div>
+        <div class="c2">
+          <input type="button" class="btc" value="7" onclick="b1(7)">
+          <input type="button" class="btc" value="8" onclick="b1(8)">
+          <input type="button" class="btc" value="9" onclick="b1(9)">
+          <input type="button" class="btc3" value="+" onclick="b1('+')">
+        </div>
+        <div class="c2">
+          <input type="button" class="btc" value="4" onclick="b1(4)">
+          <input type="button" class="btc" value="5" onclick="b1(5)">
+          <input type="button" class="btc" value="6" onclick="b1(6)">
+          <input type="button" class="btc3" value="-" onclick="b1('-')">
+        </div>
+        <div class="c2">
+          <input type="button" class="btc" value="1" onclick="b1(1)">
+          <input type="button" class="btc" value="2" onclick="b1(2)">
+          <input type="button" class="btc" value="3" onclick="b1(3)" >
+          <input type="button" class="btc3" value="×" onclick="b1('*')">
+        </div>
+        <div class="cc2">
+          <input type="button" class="btc2" value="C" onclick="bc()">
+          <input type="button" class="btc2" value="." onclick="b1('.')">
+          <input type="button" class="btc2" value="0" onclick="b1(0)">
+          <input type="button" class="btc2" value="=" onclick="cal()">
+          <input type="button" class="btc4" value="÷" onclick="b1('/')">
+        </div>
+      </form>
+      <style>
+                      *{
+   margin:0;
+   padding:0;
+ }
+ body{
+     background-color:Black;
+ }
+ .btc{
+   text-align:center;
+   height:20vh;
+   width:25%;
+   font-size:32px;
+   border:5px solid   Black;
+   
+   border-radius:150px;
+   background-image:Linear-gradient(to top right,Red,Orange,Yellow);
+   color:Black;
+ }
+ #i1{
+   
+   height:10vh;
+   width:350px;
+   border:5px solid   Black;
+   
+   font-size:48px;
+   
+   direction:ltr;
+   
+   border-width:5px;
+   border-radius:20px;
+   background-image:Linear-gradient(to right,Red,Gold,Orange,Red);
+   color:#00e;
+ }
+ .c1{
+   height:10vh;
+   width:350px;
+   background-image:Linear-gradient(to right,#FF0000,#0000FF);
+   color:Cyan;
+   text-align:center;
+   font-size:32px;
+   border:5px solid   Black;
+   
+   border-radius:20px;
+ }
+ .c2{
+   height:20vh;
+   width:100%
+  margin:0;
+   padding:0;
+   position:relative;
+ }
+ .c3{
+   height:20vh;
+   width:100%;
+   padding:0;
+ }
+ .cc2{
+   height:20vh;
+   width:100%;
+   padding:0;
+   margin:0;
+   
+ }
+ .btc2{
+   height:20vh;
+   width:20%;
+   font-size:32px;
+   background-image:linear-gradient(to bottom right,rgb(255,79,141),rgb(255,79,97),rgb(255,115,79));
+   border-radius:10px;
+   border:10px solid ;
+ }
+ .btc3{
+   height:20vh;
+   width:25%;
+   text-align:center;
+   font-size:32px;
+   float:right;
+   padding:0;
+   margin:0;
+   position:absolute;
+   background-image:linear-gradient(to bottom right,#f8e7af,#fab1a0,Pink);
+   border-radius:30px;
+   border:10px solid Black;
+ }
+ .btc4{
+   height:20vh;
+   width:20%;
+   text-align:center;
+   font-size:32px;
+   float:right;
+   padding:0;
+   margin:0;
+   position:absolute;
+   background-image:linear-gradient(to bottom right,#f8e7af,#fab1a0,pink);
+   border-radius:10px;
+   border:10px solid;
+   
+ }
+          
+      </style>
+      <script>
+          
+          alert ("Calculator by Tony Srark (V-2.0)!!!");
+alert ("Do not forget to like and share this code to your FRIENDS!!")
+function b1(x){
+        
+        document.getElementById("i1").value+=x;
+        
+        
+        }
+        function cal(){
+        
+        var a=document.getElementById("i1").value;
+    
+        document.getElementById("i1").value=eval(a);
+        }
+        function bc(){
+        document.getElementById("i1").value="";}
+      </script>
+    
+  <!--CALCULATOR BY TONY STARK-->
+    </body>
+</html>
